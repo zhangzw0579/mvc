@@ -15,6 +15,12 @@ namespace mvcTest.Controllers
             return View();
         }
 
+
+        /// <summary>
+        /// 显示详细信息
+        /// </summary>
+        /// <param name="id">id</param>
+        /// <returns></returns>
         // GET: Auction/Details/5
         public ActionResult Details(int id=1)
         {
