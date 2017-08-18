@@ -12,7 +12,26 @@ namespace mvcTest.Controllers
         // GET: Auction
         public ActionResult Index()
         {
-            return View();
+
+            List<Auction> lst = new List<Auction>();
+
+            var auction = new Auction
+            {
+                Id = 1,
+                Title = "Brand new Widget 2.0",
+                Description = "This is a brand new version 2.0 widget",
+                StartPrice = 1.00m,
+                CurrentPrice = 13.4m,
+                StartTime = DateTime.Parse("2017-07-11"),
+                EndTime = DateTime.Parse("2018-07-11"),
+
+
+
+            };
+
+            lst.Add(auction);
+
+            return View(lst);
         }
 
 
